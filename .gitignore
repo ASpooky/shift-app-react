@@ -4,6 +4,8 @@
 /node_modules
 /.pnp
 .pnp.js
+.学び.txt
+.課題.txt
 
 # testing
 /coverage
