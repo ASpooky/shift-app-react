@@ -49,8 +49,10 @@ export const UpdateShift = () => {
     .values()
     .next()
 
+  console.log(one)
+
   const Lstartdate = todatetimeString(new Date(one.value.starttime))
-  const Lenddate = todatetimeString(new Date(one.value.created_ated))
+  const Lenddate = todatetimeString(new Date(one.value.created_at))
   const { updateShiftMutation, deleteShiftMutation } = useMutateShift()
 
   useEffect(() => {

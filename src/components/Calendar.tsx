@@ -19,10 +19,6 @@ export function Calendar() {
   }, [])
   const { data, isLoading } = useQueryShifts()
   const { logoutMutation } = useMutateAuth()
-  const [update, setUpdata] = useState<boolean>(false)
-  useEffect(() => {
-    setUpdata(update ? false : true)
-  }, [])
   const logout = async () => {
     await logoutMutation.mutateAsync()
     queryClient.removeQueries(['shifts'])
